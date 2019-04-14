@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" class="h-100">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="~/css/bootstrap.css" rel="stylesheet" />
+	<link href="~/css/stilo.css" rel="stylesheet" />
+
+	<title>Hello, world!</title>
+</head>
+<body class="d-flex flex-column h-100">
+	@Html.Partial("_menuTop")
+	<main role="main" class="flex-shrink-0">
+		<div class="container">
+			@RenderBody()
+		</div>
+	</main>
+
+	<footer class="footer mt-auto py-3">
+		<div class="container">
+			<p>&copy; @DateTime.Now.Year - FN Corporation</p>
+		</div>
+	</footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="~/js/jquery-3.3.1.js"></script>
+	<script src="~/js/bootstrap.bundle.js"></script>
+	@RenderSection("scripts", false)
+</body>
+</html>
